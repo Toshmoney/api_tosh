@@ -32,7 +32,9 @@ const contactSchema = new Schema({
         type: String,
         required:true
     }
-});
+},
+{timestamps:true}
+);
 
 const contactModel = new model("contact", contactSchema)
 
